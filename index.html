@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scripts.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <title>Responsive Layouts</title>
+</head>
+<body>
+    <main class="sample-parent">
+        <article>
+            <h1>Responsive Template Layout Patterns</h1>
+            <p>Most layouts used by responsive web pages can be categorized into one of five patterns: mostly fluid, column drop, layout shifter, tiny tweaks, and off canvas. In some cases, a page may use a combination of patterns, for example column drop and off canvas. </p>
+        </article>
+<!-- Fluid Layout A -->
+        <section>
+            <h3 class="underlined">Fluid Layout - A</h3>
+            <h6>Demo</h6>
+            <div class="container fluid-a">
+                <div class="child a-1">1</div>
+                <div class="child a-2">2</div>
+                <div class="child a-3">3</div>
+                <div class="child a-4">4</div>
+                <div class="child a-5">5</div>
+            </div>
+            <article class="columns-1">
+                <a href="#" class="button">View sample</a>
+            </article>
+        </section>
+<!-- Fluid Layout B -->
+        <section>
+            <h3 class="underlined">Fluid Layout - B</h3>
+            <article class="columns-1">
+                <aside>
+                    <h6>Demo</h6>
+                    <div class="container fluid-b">
+                        <div class="child b-1">1</div>
+                        <div class="child b-2">2</div>
+                        <div class="child b-3">3</div>
+                        <div class="child b-4">4</div>
+                        <div class="child b-5">5</div>
+                    </div>
+                </aside>
+            </article>
+            <article class="columns-1">
+                <a href="#" class="button">View sample</a>
+            </article>
+            <article class="columns-2">
+                <aside>
+                    <h6>DOM Structure</h6>
+                    <figure class="dom-structure">
+                        Container
+                        <div>Child 1</div>
+                        <div>Child 2</div>
+                        <div>Child 3</div>
+                        <div>Child 4</div>
+                        <div>Child 5</div>
+                    </figure>
+                </aside>
+                <aside>
+                    <h6>&nbsp;</h6>
+                    <div class="tree-view">
+                        <p>.fluid-b</p>
+                        <ul>
+                            <li>.b-1</li>
+                            <li>.b-2</li>
+                            <li>.b-3</li>
+                            <li>.b-4</li>
+                            <li>.b-5</li>
+                        </ul>
+                    </div>
+                </aside>
+                <aside>
+                    <h6>Source codes</h6>
+                    <code>
+                    </code>
+                </aside>
+            </article>
+        </section>
+<!-- Column Drop Layout -->
+        <section>
+            <h3 class="underlined">Column Drop Layout - C</h3>
+            <h6>Demo</h6>
+            <div class="container columndrop-c">
+                <div class="child c-1">1</div>
+                <div class="child c-2">2</div>
+                <div class="child c-3">3</div>
+            </div>
+            <article class="columns-1">
+                <a href="#" class="button">View sample</a>
+            </article>
+            <h6>Demo</h6>
+            <div class="container columndrop--c">
+                <div class="child c--1">1</div>
+                <div class="child c--2">2</div>
+                <div class="child c--3">3</div>
+            </div>
+            <article class="columns-1">
+                <a href="#" class="button">View sample</a>
+            </article>
+        </section>
+
+<!-- Layout Shifter -->
+        <section>
+            <h3 class="underlined">Layout Shifter - D</h3>
+            <h6>Demo</h6>
+            <div class="container layoutshift-d">
+                <div class="child d-1">1</div>
+                <div class="child d-2">2</div>
+                <div class="child d-3">3</div>
+            </div>
+            <article class="columns-1">
+                <a href="#" class="button">View sample</a>
+            </article>
+        </section>
+
+<!-- Off-Canvas -->
+        <sect   ion>
+            <h3 class="underlined">Off Canvass - E</h3>
+            <h6>Demo</h6>
+            <div class="container offcanvass-e" id="offcanvass-e">
+                <div class="child e-1" onclick="toggleEGrid()">Navigation -<em>&nbsp;click</em></div>
+                <div class="child e-2" onclick="toggleEGrid()">Topbar -<em>&nbsp;click</em></div>
+                <div class="child e-3">Main</div>
+                <div class="child e-4">Footer</div>
+            </div>
+            <article class="columns-1">
+                <a href="#" class="button">View sample</a>
+            </article>
+        </section>
+
+<!-- Tiny Tweaks -->
+<section>
+    <h3 class="underlined">Tiny Tweaks - F</h3>
+    <h6>Demo</h6>
+    <div class="container tinytweaks-f">
+        <div class="child f-1">
+            <h1>The Quick Brown Fox Jumps Over</h1>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </div>
+    </div>
+    <article class="columns-1">
+        <a href="#" class="button">View sample</a>
+    </article>
+</section>
+
+        <!-- <h3 class="underlined">Fluid Layout - B : Flex</h3>
+        <div class="container fluid---b">
+            <div class="child b---1">1</div>
+            <div class="child b---2">2</div>
+            <div class="child b---3">3</div>
+            <div class="child b---4">4</div>
+            <div class="child b---5">5</div>
+        </div> -->
+
+        <!-- <h3 class="underlined">Column Drop Layout - C : Flex</h3>
+        <div class="container columndrop---c">
+            <div class="child c---1">1</div>
+            <div class="child c---2">2</div>
+            <div class="child c---3">3</div>
+        </div> -->
+
+        <!-- <h3 class="underlined">Off Canvass - E : Flex</h3>
+        <div class="container offcanvass---e" id="offcanvass---e">
+            <div class="child e---1" onclick="toggleEFlex()">Navigation -<em>&nbsp;click</em></div>
+            <div class="child e---2">
+                <div class="child e---3" onclick="toggleEFlex()">Topbar -<em>&nbsp;click</em></div>
+                <div class="child e---4">Main</div>
+                <div class="child e---5">Footer</div>
+            </div>
+        </div> -->
+
+    </main>
+</body>
+</html>
